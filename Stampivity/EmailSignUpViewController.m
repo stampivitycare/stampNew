@@ -27,6 +27,7 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     self.navigationController.navigationBarHidden=NO;
+    // testing commit and pushes
 }
 
 /*
