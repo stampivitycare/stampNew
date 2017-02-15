@@ -8,6 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EmailSignUpViewController : UIViewController
-
+@interface EmailSignUpViewController : UIViewController <UITextFieldDelegate>
+{
+    
+    IBOutlet UITextField *txtfieldForName;
+    IBOutlet UIImageView *imgViewForNameIcon;
+    IBOutlet UITextField *txtFieldForEmail;
+    
+    IBOutlet UITextField *txtFieldForPassword;
+    
+    IBOutlet UITextField *txtFieldForPhoneNumber;
+    
+    IBOutlet UILabel *lblForTermsConditions;
+    
+    
+    
+}
 @end

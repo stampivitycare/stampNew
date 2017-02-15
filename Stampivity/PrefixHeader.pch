@@ -16,4 +16,5 @@
 #import <Parse/Parse.h>
 #import "UIImageView+WebCache.h"
 #import "Constants.h"
+#import "StampivityAlertMessage.h"
 

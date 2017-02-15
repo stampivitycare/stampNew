@@ -8,6 +8,13 @@
         <mutableArray key="BioRhyme-Regular.ttf">
             <string>BioRhyme-Regular</string>
             <string>BioRhyme-Regular</string>
+            <string>BioRhyme-Regular</string>
+            <string>BioRhyme-Regular</string>
+            <string>BioRhyme-Regular</string>
+            <string>BioRhyme-Regular</string>
+        </mutableArray>
+        <mutableArray key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
         </mutableArray>
         <mutableArray key="Rene Bieder - Mirador ExtraBold.otf">
             <string>Mirador-ExtraBold</string>
@@ -255,12 +262,196 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dwX-nr-pbc">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EmailSignUp_BG" translatesAutoresizingMaskIntoConstraints="NO" id="dwX-nr-pbc">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Indicator_1" translatesAutoresizingMaskIntoConstraints="NO" id="W7w-Zk-GRP">
+                                <rect key="frame" x="188" y="62" width="225" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="gg3-2N-aG3"/>
+                                    <constraint firstAttribute="width" constant="225" id="tIy-if-pRI"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EmailSignUpTxtfieldBG" translatesAutoresizingMaskIntoConstraints="NO" id="51T-K6-uwt">
+                                <rect key="frame" x="20" y="160" width="560" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="btR-7A-Xx7"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ftc-od-ukz">
+                                <rect key="frame" x="70" y="165" width="470" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Lz9-GI-slt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BioRhyme-Regular" family="BioRhyme" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Jlp-MR-1pD" id="eJG-wr-PGe"/>
+                                </connections>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Name_Icon" translatesAutoresizingMaskIntoConstraints="NO" id="SQu-aX-0HB">
+                                <rect key="frame" x="35" y="175" width="20" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="CJM-g3-Aqv"/>
+                                    <constraint firstAttribute="height" constant="10" id="yvF-N8-CvH"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EmailSignUpTxtfieldBG" translatesAutoresizingMaskIntoConstraints="NO" id="UZe-mG-0Hf">
+                                <rect key="frame" x="20" y="216" width="560" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="J9P-kU-cx2"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Email_Icon" translatesAutoresizingMaskIntoConstraints="NO" id="2sh-Ws-Der">
+                                <rect key="frame" x="35" y="229" width="20" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="CLw-Hg-6OF"/>
+                                    <constraint firstAttribute="width" constant="20" id="szW-Lo-Lsw"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t79-Hp-TN8">
+                                <rect key="frame" x="70" y="222" width="470" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="lPJ-Pd-q3U"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BioRhyme-Regular" family="BioRhyme" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Jlp-MR-1pD" id="IAc-hz-rBk"/>
+                                </connections>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EmailSignUpTxtfieldBG" translatesAutoresizingMaskIntoConstraints="NO" id="Vfd-Zu-0k4">
+                                <rect key="frame" x="20" y="275" width="560" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="FDo-mb-7XX"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Email_Password_Icon" translatesAutoresizingMaskIntoConstraints="NO" id="x7K-7z-0vL">
+                                <rect key="frame" x="35" y="286" width="18" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="02C-Hj-2Pp"/>
+                                    <constraint firstAttribute="width" constant="18" id="Rja-yK-sU9"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0me-Ta-yl3">
+                                <rect key="frame" x="65" y="283" width="470" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Fj3-Kf-JoO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BioRhyme-Regular" family="BioRhyme" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Jlp-MR-1pD" id="hPe-IE-aJL"/>
+                                </connections>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EmailSignUpTxtfieldBG" translatesAutoresizingMaskIntoConstraints="NO" id="kD5-bV-28l">
+                                <rect key="frame" x="20" y="331" width="560" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="Ry0-oM-wjE"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PhoneNumber_Icon" translatesAutoresizingMaskIntoConstraints="NO" id="6Et-gK-mr6">
+                                <rect key="frame" x="35" y="342" width="16" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="iBM-kP-ErO"/>
+                                    <constraint firstAttribute="width" constant="16" id="qqi-jb-jaS"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Phone number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I8i-he-b0O">
+                                <rect key="frame" x="65" y="339" width="470" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="zD6-Rk-9jB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BioRhyme-Regular" family="BioRhyme" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Jlp-MR-1pD" id="0z8-DJ-eyT"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NcS-4u-8PC" userLabel="ContinueBtn">
+                                <rect key="frame" x="20" y="420" width="560" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="0NM-PO-iPq"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="Continue_btn"/>
+                                <connections>
+                                    <action selector="continueBtnAction:" destination="Jlp-MR-1pD" eventType="touchUpInside" id="GQ5-Lu-tce"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms &amp; Conditions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfS-cg-6Dj">
+                                <rect key="frame" x="226" y="567" width="148" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="148" id="IZ1-ZW-Ljv"/>
+                                    <constraint firstAttribute="height" constant="21" id="iiX-Iq-FHa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dwX-nr-pbc" firstAttribute="top" secondItem="eBZ-Hn-xMN" secondAttribute="top" id="0b0-xY-9r7"/>
+                            <constraint firstAttribute="trailing" secondItem="dwX-nr-pbc" secondAttribute="trailing" id="0zp-z1-wCY"/>
+                            <constraint firstItem="ftc-od-ukz" firstAttribute="leading" secondItem="eBZ-Hn-xMN" secondAttribute="leading" constant="70" id="2IY-Mk-7Sx"/>
+                            <constraint firstItem="t79-Hp-TN8" firstAttribute="leading" secondItem="2sh-Ws-Der" secondAttribute="trailing" constant="15" id="3PM-4Q-PTg"/>
+                            <constraint firstItem="x7K-7z-0vL" firstAttribute="leading" secondItem="eBZ-Hn-xMN" secondAttribute="leading" constant="35" id="3vS-tq-VwP"/>
+                            <constraint firstItem="NcS-4u-8PC" firstAttribute="top" secondItem="kD5-bV-28l" secondAttribute="bottom" constant="41" id="5PW-DF-Vfs"/>
+                            <constraint firstItem="0me-Ta-yl3" firstAttribute="top" secondItem="UZe-mG-0Hf" secondAttribute="bottom" constant="21" id="Ak8-St-afo"/>
+                            <constraint firstItem="W7w-Zk-GRP" firstAttribute="centerX" secondItem="eBZ-Hn-xMN" secondAttribute="centerX" id="Caw-b9-MIj"/>
+                            <constraint firstItem="Vfd-Zu-0k4" firstAttribute="top" secondItem="UZe-mG-0Hf" secondAttribute="bottom" constant="13" id="Ehv-NF-VqU"/>
+                            <constraint firstAttribute="trailing" secondItem="0me-Ta-yl3" secondAttribute="trailing" constant="65" id="Gqo-f2-rMh"/>
+                            <constraint firstItem="51T-K6-uwt" firstAttribute="leading" secondItem="eBZ-Hn-xMN" secondAttribute="leading" constant="20" id="HN3-ie-UL6"/>
+                            <constraint firstItem="x7K-7z-0vL" firstAttribute="top" secondItem="UZe-mG-0Hf" secondAttribute="bottom" constant="24" id="JL6-03-MVy"/>
+                            <constraint firstItem="6Et-gK-mr6" firstAttribute="leading" secondItem="eBZ-Hn-xMN" secondAttribute="leading" constant="35" id="JZu-El-wFk"/>
+                            <constraint firstItem="kD5-bV-28l" firstAttribute="top" secondItem="Vfd-Zu-0k4" secondAttribute="bottom" constant="10" id="Jkg-ps-laD"/>
+                            <constraint firstAttribute="trailing" secondItem="51T-K6-uwt" secondAttribute="trailing" constant="20" id="K6W-dR-vxZ"/>
+                            <constraint firstItem="0me-Ta-yl3" firstAttribute="leading" secondItem="x7K-7z-0vL" secondAttribute="trailing" constant="12" id="NVy-El-LWd"/>
+                            <constraint firstItem="ftc-od-ukz" firstAttribute="top" secondItem="W7w-Zk-GRP" secondAttribute="bottom" constant="81" id="OI0-Ah-aWe"/>
+                            <constraint firstItem="t79-Hp-TN8" firstAttribute="top" secondItem="51T-K6-uwt" secondAttribute="bottom" constant="16" id="PN5-NU-TiB"/>
+                            <constraint firstItem="CpQ-Zi-Lef" firstAttribute="top" secondItem="dwX-nr-pbc" secondAttribute="bottom" id="T1F-58-cNK"/>
+                            <constraint firstItem="2sh-Ws-Der" firstAttribute="leading" secondItem="eBZ-Hn-xMN" secondAttribute="leading" constant="35" id="T6a-Xi-5x8"/>
+                            <constraint firstAttribute="trailing" secondItem="t79-Hp-TN8" secondAttribute="trailing" constant="60" id="TYZ-UJ-Ncl"/>
+                            <constraint firstItem="dfS-cg-6Dj" firstAttribute="centerX" secondItem="eBZ-Hn-xMN" secondAttribute="centerX" id="U1G-N8-ie7"/>
+                            <constraint firstItem="W7w-Zk-GRP" firstAttribute="top" secondItem="Z1V-k4-klr" secondAttribute="bottom" constant="42" id="UOk-6S-Awq"/>
+                            <constraint firstItem="51T-K6-uwt" firstAttribute="top" secondItem="W7w-Zk-GRP" secondAttribute="bottom" constant="76" id="YIW-VH-vTm"/>
+                            <constraint firstItem="SQu-aX-0HB" firstAttribute="leading" secondItem="eBZ-Hn-xMN" secondAttribute="leading" constant="35" id="Yi2-vu-4aW"/>
+                            <constraint firstItem="Vfd-Zu-0k4" firstAttribute="leading" secondItem="eBZ-Hn-xMN" secondAttribute="leading" constant="20" id="aeA-zI-BSt"/>
+                            <constraint firstItem="6Et-gK-mr6" firstAttribute="top" secondItem="Vfd-Zu-0k4" secondAttribute="bottom" constant="21" id="cF4-Jc-S0k"/>
+                            <constraint firstAttribute="trailing" secondItem="kD5-bV-28l" secondAttribute="trailing" constant="20" id="cHn-ch-TeQ"/>
+                            <constraint firstItem="SQu-aX-0HB" firstAttribute="top" secondItem="Z1V-k4-klr" secondAttribute="bottom" constant="155" id="fLu-25-9iA"/>
+                            <constraint firstItem="2sh-Ws-Der" firstAttribute="top" secondItem="51T-K6-uwt" secondAttribute="bottom" constant="23" id="hR1-n1-kgx"/>
+                            <constraint firstItem="I8i-he-b0O" firstAttribute="top" secondItem="Vfd-Zu-0k4" secondAttribute="bottom" constant="18" id="mT5-FT-JN2"/>
+                            <constraint firstAttribute="trailing" secondItem="UZe-mG-0Hf" secondAttribute="trailing" constant="20" id="nbb-sb-Tre"/>
+                            <constraint firstItem="kD5-bV-28l" firstAttribute="leading" secondItem="eBZ-Hn-xMN" secondAttribute="leading" constant="20" id="pZ1-iM-cdg"/>
+                            <constraint firstItem="CpQ-Zi-Lef" firstAttribute="top" secondItem="dfS-cg-6Dj" secondAttribute="bottom" constant="12" id="pfF-Pw-fHN"/>
+                            <constraint firstAttribute="trailing" secondItem="ftc-od-ukz" secondAttribute="trailing" constant="60" id="qk5-dV-07A"/>
+                            <constraint firstItem="UZe-mG-0Hf" firstAttribute="top" secondItem="51T-K6-uwt" secondAttribute="bottom" constant="10" id="rZ4-zJ-S8P"/>
+                            <constraint firstItem="I8i-he-b0O" firstAttribute="leading" secondItem="6Et-gK-mr6" secondAttribute="trailing" constant="14" id="uQ9-BH-4h2"/>
+                            <constraint firstItem="dfS-cg-6Dj" firstAttribute="top" secondItem="NcS-4u-8PC" secondAttribute="bottom" constant="99" id="v01-bp-qTs"/>
+                            <constraint firstAttribute="trailing" secondItem="NcS-4u-8PC" secondAttribute="trailing" constant="20" id="vYB-lW-LiA"/>
+                            <constraint firstItem="ftc-od-ukz" firstAttribute="leading" secondItem="51T-K6-uwt" secondAttribute="trailing" constant="-540" id="wlC-HB-fIb"/>
+                            <constraint firstItem="UZe-mG-0Hf" firstAttribute="leading" secondItem="eBZ-Hn-xMN" secondAttribute="leading" constant="20" id="xV5-eT-dXI"/>
+                            <constraint firstAttribute="trailing" secondItem="I8i-he-b0O" secondAttribute="trailing" constant="65" id="xcE-Y5-Dby"/>
+                            <constraint firstItem="NcS-4u-8PC" firstAttribute="leading" secondItem="eBZ-Hn-xMN" secondAttribute="leading" constant="20" id="y0S-8f-pKp"/>
+                            <constraint firstItem="dwX-nr-pbc" firstAttribute="leading" secondItem="eBZ-Hn-xMN" secondAttribute="leading" id="yHr-CF-7GU"/>
+                            <constraint firstAttribute="trailing" secondItem="Vfd-Zu-0k4" secondAttribute="trailing" constant="20" id="zOL-Go-Y5L"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="wlC-HB-fIb"/>
+                                <exclude reference="5PW-DF-Vfs"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="imgViewForNameIcon" destination="SQu-aX-0HB" id="vPu-EW-nTi"/>
+                        <outlet property="lblForTermsConditions" destination="dfS-cg-6Dj" id="tqj-Gx-cgY"/>
+                        <outlet property="txtFieldForEmail" destination="t79-Hp-TN8" id="eNf-Cq-MUr"/>
+                        <outlet property="txtFieldForPassword" destination="0me-Ta-yl3" id="kTn-Kj-VPh"/>
+                        <outlet property="txtFieldForPhoneNumber" destination="I8i-he-b0O" id="JiT-ai-DsN"/>
+                        <outlet property="txtfieldForName" destination="ftc-od-ukz" id="djp-kK-11K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TkF-0C-pgJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -287,11 +478,19 @@
     </scenes>
     <resources>
         <image name="Backgroung" width="320" height="568"/>
+        <image name="Continue_btn" width="280" height="49"/>
+        <image name="EmailSignUpTxtfieldBG" width="278" height="47"/>
+        <image name="EmailSignUp_BG" width="320" height="568"/>
+        <image name="Email_Icon" width="18" height="15"/>
+        <image name="Email_Password_Icon" width="18" height="22"/>
         <image name="GetStarted" width="280" height="49"/>
+        <image name="Indicator_1" width="224" height="22"/>
         <image name="LoginPage" width="320" height="568"/>
         <image name="LoginWithFB" width="278" height="62"/>
         <image name="Logo" width="106" height="106"/>
+        <image name="Name_Icon" width="18" height="7"/>
         <image name="PasswordIcon" width="21" height="11"/>
+        <image name="PhoneNumber_Icon" width="16" height="22"/>
         <image name="SignUpWithEmail" width="268" height="52"/>
         <image name="UserIcon" width="18" height="17"/>
         <image name="txtFieldBG" width="278" height="48"/>

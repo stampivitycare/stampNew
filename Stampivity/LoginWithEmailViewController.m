@@ -83,11 +83,18 @@
 
 -(void)textFieldDidBeginEditing:(UITextField *)textField
 {
-    if (txtFieldForPassword==textField)
+    if (textField==txtFieldForPassword)
     {
         if ([txtFieldForPassword.text isEqualToString:@"Password"]) {
             txtFieldForPassword.secureTextEntry=YES;
             txtFieldForPassword.text=@"";
+        }
+    }
+    else if (textField==txtFieldForEmailAddress)
+    {
+        if ([txtFieldForEmailAddress.text isEqualToString:@"Email Address"])
+        {
+                txtFieldForEmailAddress.text=@"";
         }
     }
 }
@@ -100,6 +107,13 @@
         {
             txtFieldForPassword.text=@"Password";
             txtFieldForPassword.secureTextEntry=NO;
+        }
+    }
+    else if (textField==txtFieldForEmailAddress)
+    {
+        if (txtFieldForEmailAddress.text.length==0)
+        {
+            txtFieldForEmailAddress.text=@"Email Address";
         }
     }
 }
